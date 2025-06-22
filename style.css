@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+  min-height: 100%;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #004aad;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero {
+  background: #e0f7fa;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  display: inline-block;
+  background: #004aad;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.featured {
+  padding: 40px 30px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.hero-small {
+  padding: 40px 30px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.filters {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.filters select {
+  padding: 6px;
+  font-size: 16px;
+}
+
+.course-detail {
+  padding: 40px 30px;
+  background: #fff;
+}
+
+.course-detail h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.instructor {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 25px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.syllabus {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.syllabus ul {
+  list-style: none;
+}
+
+.syllabus li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.syllabus li:hover {
+  background-color: #e0e0e0;
+}
+
+.enroll {
+  margin-top: 30px;
+}
+
+.syllabus li.active {
+  background-color: #cfe3ff;
+  font-weight: bold;
+}
+
+.dashboard {
+  padding: 40px 30px;
+}
+
+.dashboard h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.progress-section {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.course-progress {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.progress-bar-bg {
+  background: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #004aad;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin: 10px 0 5px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  margin-top: 20px;
+  background-color: #004aad;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #00368f;
+}
+
+.form-container p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-container a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+/* Mobile-first tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .theme-switch {
+    margin-left: 0;
+  }
+
+  .form-container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .course-card,
+  .course-detail {
+    width: 100%;
+  }
+}

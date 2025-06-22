@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>eLearn - Course Detail</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">eLearn</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Course Overview -->
+  <section class="course-detail">
+    <h1>JavaScript Basics</h1>
+    <p class="instructor">Instructor: Jane Doe</p>
+    <p class="description">
+      This course introduces you to JavaScript, one of the most popular programming languages. Build interactive
+      websites, understand core concepts, and practice with real-world exercises.
+    </p>
+
+    <!-- Embedded Video -->
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Syllabus -->
+    <div class="syllabus">
+      <h2>Course Syllabus</h2>
+      <ul id="syllabusList">
+        <li onclick="toggleLesson(this)">Introduction to JavaScript</li>
+        <li onclick="toggleLesson(this)">Variables and Data Types</li>
+        <li onclick="toggleLesson(this)">Functions and Events</li>
+        <li onclick="toggleLesson(this)">DOM Manipulation</li>
+        <li onclick="toggleLesson(this)">Mini Project</li>
+      </ul>
+    </div>
+
+    <!-- Enroll Button -->
+    <div class="enroll">
+      <a href="dashboard.html" class="btn">Enroll & Start Learning</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 eLearn Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

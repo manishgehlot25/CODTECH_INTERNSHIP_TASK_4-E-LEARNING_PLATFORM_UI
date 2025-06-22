@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>eLearn - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">eLearn</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard Content -->
+  <section class="dashboard">
+    <h1>My Learning Dashboard</h1>
+    <p>Welcome back! Here’s your course progress.</p>
+
+    <div class="progress-section">
+      <div class="course-progress">
+        <h3>JavaScript Basics</h3>
+        <div class="progress-bar-bg">
+          <div class="progress-bar" data-percent="70"></div>
+        </div>
+        <p>Progress: 70%</p>
+        <a href="course-detail.html" class="btn">Continue Learning</a>
+      </div>
+
+      <div class="course-progress">
+        <h3>UI/UX Fundamentals</h3>
+        <div class="progress-bar-bg">
+          <div class="progress-bar" data-percent="45"></div>
+        </div>
+        <p>Progress: 45%</p>
+        <a href="course-detail.html" class="btn">Continue Learning</a>
+      </div>
+
+      <!-- Add more course-progress blocks as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 eLearn Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

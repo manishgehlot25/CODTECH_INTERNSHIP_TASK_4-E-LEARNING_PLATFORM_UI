@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>eLearn - Courses</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">eLearn</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="hero hero-small">
+    <h1>All Courses</h1>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="filters">
+    <label>
+      Category:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="programming">Programming</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+      </select>
+    </label>
+  </section>
+
+  <!-- Courses Grid -->
+  <section class="course-list">
+    <div class="course-grid" id="courseContainer">
+      <div class="course-card" data-category="programming">
+        <img src="JavaScript.png" alt="JavaScript Basics" />
+        <h3>JavaScript Basics</h3>
+        <p>Learn how to code with JS from scratch.</p>
+        <a href="course-detail.html">View Course</a>
+      </div>
+
+      <div class="course-card" data-category="design">
+        <img src="UIUX.png" alt="UI Design" />
+        <h3>UI/UX Fundamentals</h3>
+        <p>Explore UI design best practices.</p>
+        <a href="course-detail.html">View Course</a>
+      </div>
+
+      <div class="course-card" data-category="marketing">
+        <img src="DigitalMarketing.png" alt="Digital Marketing" />
+        <h3>Digital Marketing</h3>
+        <p>Grow your brand using online tools.</p>
+        <a href="course-detail.html">View Course</a>
+      </div>
+
+      <!-- Add more courses as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 eLearn Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
