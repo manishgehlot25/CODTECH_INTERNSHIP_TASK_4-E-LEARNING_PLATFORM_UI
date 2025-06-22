@@ -32,3 +32,12 @@ Features :-
 
 # OUTPUT :-
 
+![Image](https://github.com/user-attachments/assets/71471306-8fd4-45b2-85a8-f15ebdb9f785)
+
+![Image](https://github.com/user-attachments/assets/4e67cdc3-d5e9-4bb7-8bce-97a34fe60b85)
+
+![Image](https://github.com/user-attachments/assets/29b70dd8-a98a-423c-a52b-2266258cfd10)
+
+![Image](https://github.com/user-attachments/assets/6836e495-a873-4e9f-a0de-dba6ec1b2f73)
+
+![Image](https://github.com/user-attachments/assets/284dccee-ebe3-4ddb-b816-94076dafe59f)
